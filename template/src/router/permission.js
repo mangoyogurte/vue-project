@@ -1,7 +1,7 @@
 import router from './router'
 
 // 不重定向白名单
-const whiteList = ['/','/index','/login','/account/index','/classical/usdt','/classical/btc','/classical/eth','/flash','/account/index','/account/about','/account/help','/account/feedback','/c2c/trade','/kline','/invite','/download','/register'];
+const whiteList = ['/','/index','/login'];
 router.beforeEach((to, from, next) => {
   if (sessionStorage.getItem('access_token')) {
     if (to.path === '/login') {

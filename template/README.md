@@ -3,6 +3,9 @@
 # install dependencies
 npm install
 
+# 打包dll（dependencies更新，dll需重新打包）
+npm run dll
+
 # 本机调试
 npm run dev
 
