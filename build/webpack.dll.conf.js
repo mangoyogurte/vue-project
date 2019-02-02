@@ -12,6 +12,7 @@ let dependencies = Object.keys(package.dependencies) || []
 //如果使用了chrome的vue-devtool，那打包的时候把vue也排除掉，因为压缩过的vue是不能使用vue-devtool的
 dependencies = dependencies.length > 0 ? dependencies.filter(item => ['vue','vux',"cross-env"].indexOf(item)===-1) : []
 module.exports = {
+  mode: 'none',
   entry: {
     vendor: dependencies
   },

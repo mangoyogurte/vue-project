@@ -11,5 +11,8 @@ npm run test
 
 # 正式服打包
 npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
